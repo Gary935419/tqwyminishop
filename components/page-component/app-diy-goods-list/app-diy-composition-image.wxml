@@ -1,0 +1,1 @@
+<view class="app-diy-composition-image data-v-e74dc5b0"><view class="{{['goods-one dir-left-wrap data-v-e74dc5b0',imageClass]}}"><block wx:for="{{imageList}}" wx:for-item="item" wx:for-index="key" wx:key="key"><block class="data-v-e74dc5b0"><image mode="{{mode}}" src="{{item}}" class="data-v-e74dc5b0"></image></block></block></view></view>

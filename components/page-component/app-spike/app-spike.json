@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "app-timer": "/components/basic-component/app-timer/app-timer"
+  },
+  "component": true
+}

@@ -17,7 +17,7 @@
 						<view class="dir-left-nowrap cross-center data-v-5633a828">
 							<view class="nickname t-omit data-v-5633a828">{{userInfo.nickname}}</view>
 							<button class="u-refresh dir-left-nowrap main-between cross-center member-margin data-v-5633a828" data-event-opts="{{[['tap',[['getUserProfile',['$event']]]]]}}" bindtap="__e">
-							<icon class="u-icon data-v-5633a828"></icon><text class="data-v-5633a828">刷新</text>
+							<icon class="u-icon data-v-5633a828"></icon><text class="data-v-5633a828">更新信息</text>
 							</button>
 						</view>
 						<block wx:if="{{mall.setting.is_icon_members_grade==1}}">
@@ -81,7 +81,7 @@
 						<view class="dir-left-nowrap cross-center main-center data-v-5633a828">
 							<view class="{{['nickname t-omit data-v-5633a828',mall.setting.is_icon_members_grade!=1?'no-member-icon':'']}}">{{''+userInfo.nickname}}</view>
 							<button class="{{['u-refresh dir-left-nowrap main-between cross-center data-v-5633a828',mall.setting.is_icon_members_grade!=1?'no-member-icon':'']}}" data-event-opts="{{[['tap',[['getUserProfile',['$event']]]]]}}" bindtap="__e">
-							<icon class="u-icon data-v-5633a828"></icon><text class="data-v-5633a828">刷新</text>
+							<icon class="u-icon data-v-5633a828"></icon><text class="data-v-5633a828">更新信息</text>
 							</button>
 						</view>
 					</block>
@@ -110,7 +110,7 @@
 							<view class="dir-left-nowrap cross-center data-v-5633a828">
 								<view class="nickname t-omit data-v-5633a828">{{userInfo.nickname}}</view>
 								<button data-event-opts="{{[['tap',[['getUserProfile',['$event']]]]]}}" bindtap="__e" class="u-refresh dir-left-nowrap main-between cross-center member-margin data-v-5633a828">
-								<icon class="u-icon data-v-5633a828"></icon><text class="data-v-5633a828">刷新</text>
+								<icon class="u-icon data-v-5633a828"></icon><text class="data-v-5633a828">更新信息</text>
 								</button>
 							</view>
 							<block wx:if="{{mall.setting.is_icon_members_grade==1}}">

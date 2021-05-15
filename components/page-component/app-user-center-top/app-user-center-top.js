@@ -118,13 +118,45 @@
                                  				icon: "none"
                                  			}), e.setStorageSync(
                                  				"_USER_ACCESS_TOKEN", t.data
-                                 				.access_token)
+                                 				.access_token),
+												e.navigateTo({
+													url: "/pages/user-center/user-center"
+												})
                                  		})
                                  	}
                                  })
 						      }
 						    })
-						  },
+						},
+						getUserInfo: function(t) {
+							var n = this;
+							e.login({
+								scopes: "auth_user",
+								success: function(r) {
+									var i = {
+										encryptedData: t.detail.encryptedData,
+										iv: t.detail.iv,
+										rawData: t.detail.rawData,
+										signature: t.detail.signature,
+										code: r.code
+									};
+									n.$request({
+										url: n.$api.passport.login,
+										method: "post",
+										data: i
+									}).then(function(t) {
+										if (e.hideLoading(), 0 !== t.code)
+											return reject(t.msg);
+										e.showToast({
+											title: "资料已更新",
+											icon: "none"
+										}), e.setStorageSync(
+											"_USER_ACCESS_TOKEN", t.data
+											.access_token)
+									})
+								}
+							})
+						}
 					}
 				};
 				t.default = c
